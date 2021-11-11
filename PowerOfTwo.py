@@ -17,5 +17,5 @@ try:
 except Exception:
     print("hey its an error because you entered invalid input")
 finally:
-    print("program to check leapyear or not")
+    print("its a power table program")
 
