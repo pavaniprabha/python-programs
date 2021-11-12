@@ -52,6 +52,7 @@ def game():
 
         # Now we will check if player X or O has won,for every move after 5 moves. 
         if count >= 5:
+         try:
             if theBoard['7'] == theBoard['8'] == theBoard['9'] != ' ': # across the bottom
                 printBoard(theBoard)
                 print("\nGame Over.\n")                
@@ -92,6 +93,8 @@ def game():
                 print("\nGame Over.\n")                
                 print(" **** " +turn + " won. ****")
                 break 
+         except Exception:
+                print("error occurred")
 
         # If neither X nor O wins and the board is full, we'll declare the result as 'tie'.
         if count == 9:
